@@ -27,7 +27,7 @@ A choropleth map is a thematic map in which areas are shaded or patterned in pro
 
 ```{r  display_map, echo=FALSE, warning=FALSE, message=FALSE}
 #Read the data from the geojson file
-uk_postcode_area <- geojsonio::geojson_read("data/UK_postcode_area_generalised.geojson", what = "sp")
+uk_postcode_area <- geojsonio::geojson_read("data/UK_channel_postcode_area_generalised.geojson", what = "sp")
 
 #Read the csv
 sample_data <- read.csv("data/postcode_area_sample_data.csv")
@@ -79,13 +79,13 @@ You can find the boundaries in the Boundaries menu in the portal.
 
 ![](img/ons_boundaries.png)
 
-For this project we are going to use the UK Postcode Areas.  The boundary files are in geojson format and can be found in the data folder of this project.
+For this project we are going to use the UK Postcode Areas.  The boundary file is in geojson format and can be found in the data folder of this project.
 
-Here we load the data into a SpatialPolygonDataFrame.  Using the glimpse function on the data slot shows us there are 121 polygons, one for each of the UK postcode areas.  
+Here we load the data into a SpatialPolygonDataFrame.  Using the glimpse function on the data slot shows us there are 124 polygons, one for each of the UK postcode areas (including the Isle of Man, Jersey and Guernsey).  
 
 ```{r load_boundary}
 #Read the boundaries from the geojson file
-uk_postcode_area <- geojsonio::geojson_read("data/UK_postcode_area_generalised.geojson", what = "sp")
+uk_postcode_area <- geojsonio::geojson_read("data/UK_channel_postcode_area_generalised.geojson", what = "sp")
 
 #Get glimpse of the data
 glimpse(uk_postcode_area@data)
