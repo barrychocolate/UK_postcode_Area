@@ -24,7 +24,7 @@ lapply(list_of_packages, library, character.only = TRUE)
 
 A choropleth map is a thematic map in which areas are shaded or patterned in proportion to the measurement of the statistical variable being displayed on the map, such as population density or per-capita income.  In this exercise we are going to produce the map below.
 
-All of the files for this project are availble in my [Github Repository](https://github.com/barrychocolate/UK_postcode_Area).  You can also view this walthrough in html format on [Github Pages](https://barrychocolate.github.io/UK_postcode_Area/postcode_area.html).
+All of the files for this project are availble in my [GitHub Repository](https://github.com/barrychocolate/UK_postcode_Area).  You can also view this walk-through in html format on [GitHub Pages](https://barrychocolate.github.io/UK_postcode_Area/postcode_area.html).
 
 
 ```{r  display_map, echo=FALSE, warning=FALSE, message=FALSE}
